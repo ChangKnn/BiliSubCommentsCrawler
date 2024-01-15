@@ -7,13 +7,13 @@
 ## 使用方法
 
 ```shell
-python main.py -i [input file] -o [output file] -cookie [bili cookie]
+python main.py -i [input file] -o [output file] -c [bili cookie]
 ```
 
 e.g.
 
 ```shell
-python main.py -i detail_comments_2024-01-15.csv -cookie "bili cookie"
+python main.py -i detail_comments_2024-01-15.csv -c "bili cookie"
 ```
 
 ### 参数
@@ -25,7 +25,7 @@ MediaCrawler爬取得到的主评论文件
 -o
 [可选]输出文件名
 
--cookie
+-c
 用户B站cookie
 ```
 

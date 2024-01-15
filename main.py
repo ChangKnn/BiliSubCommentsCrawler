@@ -9,11 +9,11 @@ def main():
     parser = argparse.ArgumentParser(description='Bili sub-comments crawler program.')
     parser.add_argument('-i', type=str, help='Input file)', default=config.INPUT_CSV_NAME)
     parser.add_argument('-o', type=str, help='Output file name', default=config.OUTPUT_CSV_NAME)
-    parser.add_argument('-cookie', type=str, help='Bili cookie', default=config.COOKIE)
+    parser.add_argument('-c', type=str, help='Bili cookie', default=config.COOKIE)
 
     args = parser.parse_args()
 
-    sub_comment_crawler(args.i, args.o, args.cookie)
+    sub_comment_crawler(args.i, args.o, args.c)
 
 if __name__ == '__main__':
     main()
